@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<title>DNA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="new2.css">
+<link rel="stylesheet" href="new.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("back.jpg");
+  min-height: 100%;
+}</style>
+
+<body class="w3-auto">
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <h1>A tool for finding sequence patterns in long DNA/RNA sequences</h1>
+  <br><br>
+  <h3>Find the frequency of the given sequence in the long DNA/RNA sequence provided</h3>
+  <br><br>
+  <div class="w3-middle w3-card">
+    <div>DNA</div>
+  <input type="text" id="dna1" style="width:100%" >
+  <br><br>
+  <div>PATTERN</div>
+  <input type="text" id="dna2" style="width:100%">
+   <br><br>
+   <button class="w3-button w3-blue-grey" id="search">Search</button>
+   <br><br>
+   <input type="text" id="freq" style="width:100%" value="0">
+   <br><br>
+   <div>Markers to the starting position of the pattern in the long DNA sequence </div>
+   <input type="text" id="seq" style="width:100%">
+   <br><br>
+   
+
+
+   
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="get_freq.js"></script>
+</body>
+</html>
+

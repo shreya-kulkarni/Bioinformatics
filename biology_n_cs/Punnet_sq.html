@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<title>BIO TOOLS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="new2.css">
+<link rel="stylesheet" href="new.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("back.jpg");
+  min-height: 100%;
+}</style>
+<body class="w3-auto">
+
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+
+<!-- Heading-->
+<div class="w3-container">
+  <h3 class="w3-center">TOOLS</h3>
+  <h3 class="w3-center">PUNNETS SQUARE</h3>
+  
+<div class="w3-container">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+         <div> 
+          <p class="w3-opacity">Calculate the probabilty of the given genotype/phenotype</p>
+         <div>Genotype of first parent:</div>
+          <input type="text" id="parent1" class=w3-border-grey>
+          <br><br>
+          <div>Genotype of second parent: </div>
+          <input type="text" id="parent2" class=w3-border-grey>
+          <br><br>
+         <div> Genotype of child:</div>
+         <input type="text" id="g" class=w3-border-grey>
+         <br><br>
+         <div class="w3-display-right">
+          <br><br>
+         <div>Number of chidren having same genotype:</div>
+         <br>
+          <input type="text" id="o3" defaut=" " class=w3-border-grey>
+          <br>
+          <div>The probabilty that the child has the following genotype is:</div>
+          <br>
+          <input type="text"id="o1" default=" " class=w3-border-grey>
+          <br>
+          <div>Number of chidren having same phenotype:</div>
+          <br>
+          <input type="text" id="o2" defaut=" " class=w3-border-grey>
+          <br>
+          <div>The probabilty that the child has the following phenotype is:</div>
+          <br>
+          <input type="text"id="o4" default=" " class=w3-border-grey>
+          </div>
+          <div class="w3-display-bottommiddle ">
+          <p><button class ="w3-button w3-light-grey w3-block w3-border-black  w3-blue-grey" id="calculate"></i>Calculte</button></p>
+           <p><button class="w3-button w3-light-grey w3-block w3-border-black  w3-blue-grey" id="reset"></i>Reset</button></p> 
+         </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="Punnet_sq.js"></script>
+</body>
+</html>

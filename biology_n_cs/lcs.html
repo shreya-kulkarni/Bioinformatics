@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<title>DNA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="new2.css">
+<link rel="stylesheet" href="new.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("back.jpg");
+  min-height: 100%;
+}</style>
+
+<body class="w3-auto">
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <h1>A tool for finding common nucleotide sequence patterns in long DNA/RNA sequences</h1>
+  <br><br>
+  <h3>Find the maximal match</h3>
+  <br><br>
+  <div class="w3-middle w3-card">
+    <div>DNA/RNA_1</div>
+  <input type="text" id="dna1" style="width:100%" >
+  <br><br>
+  <div>DNA/RNA_2</div>
+  <input type="text" id="dna2" style="width:100%">
+   <br><br>
+   <button class="w3-button w3-border-black w3-blue-grey" id="search">Search</button>
+   <br><br>
+   <div>Longest Common nucleotide sequence between the two strands </div>
+   <input type="text" id="common" style="width:100%">
+   <br><br>
+   </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="lcs.js"></script>
+</body>
+</html>
